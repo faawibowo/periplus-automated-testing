@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Periplus Cart Test Suite" verbose="2">
 
+    <listeners>
+        <listener class-name="base.ScreenshotListener"/>
+    </listeners>
+
     <test name="Cart Functionality Tests">
         <classes>
             <class name="tests.CartTest"/>
